@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(back2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.content {
+    height: 32rem;
+    width: 20rem;
+    border-radius: 15px;
+    overflow: hidden;
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 7px 7px 7px 0px black;
+}
+
+.content .slide img {
+    height: 100%;
+    width: 105%;
+
+}
+
+.slides {
+    display: flex;
+    height: 100%;
+    width: 500%;
+
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 100px;
+    left: 295px;
+    display: flex;
+}
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 15px;
+    cursor: pointer;
+    transform: .5s ease;
+    display: none;
+}
+
+.bar:hover {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.countup{
+    color: whitesmoke;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 0px black;
+}
+.countup .displayTime {
+    position:sticky;
+    display: inline-block;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 6px;
+    background: #151515;
+    margin: 0;
+    color: white;
+    min-width: 1.8rem;
+    margin-left: 13px;
+    border-radius: 10px 0 0 10px;
+  }
+.countup span[class*="timeRef"] {
+    border-radius: 0 20px 20px 0;
+    margin-left: 0;
+    background-color:rgb(255, 0, 255);
+    color: whitesmoke;
+  }
