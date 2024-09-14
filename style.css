@@ -10,12 +10,12 @@ body {
 }
 
 .content {
-    height: 32rem;
+    height: 30rem;
     width: 20rem;
     border-radius: 15px;
     overflow: hidden;
     position: absolute;
-    top: 51%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 7px 7px 7px 0px black;
@@ -87,6 +87,8 @@ input {
 h1 {
     color: white;
     text-align: center;
+    position: relative;
+    top: 15px;
     font-size: 35px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -94,6 +96,8 @@ h1 {
     color: whitesmoke;
     text-align: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    top: 20px;
 }
 
 img {
